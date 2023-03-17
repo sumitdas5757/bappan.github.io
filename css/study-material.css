@@ -1,0 +1,201 @@
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-varient: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+    --color-secondary: #8419cc;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+
+.boton {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 0.4rem 1rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    margin-top: 1.5rem;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.boton:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+
+}
+
+.boton {
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+
+/* ================ Achievements ===============*/
+
+
+
+.about_achievements {
+    margin-top: 3rem;
+
+}
+
+.about_achievements-container {
+    position: relative;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+
+}
+
+.about_achievements-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.about_achievements-left {
+    margin: 0 21rem 3rem;
+}
+
+
+.achievements_cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.2rem;
+}
+
+.achievement_card img {
+    text-align: center;
+}
+
+
+.achievement_card {
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+.achievement_card:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+
+}
+
+.achievement_icon {
+    background: var(--color-danger);
+    padding: 0rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    width: 80%;
+}
+
+.achievement_card:nth-child(2) .achievement_icon {
+    background-color: var(--color-success);
+}
+
+.achievement_card:nth-child(3) .achievement_icon {
+    background-color: var(--color-primary);
+}
+.achievement_card:nth-child(4) .achievement_icon {
+    background-color: var(--color-warning);
+}
+
+.achievement_card:nth-child(5) .achievement_icon {
+    background-color: var(--color-secondary);
+}
+
+.achievement_card:nth-child(6) .achievement_icon {
+    background-color: var(--color-success);
+}
+
+.achievement_card:nth-child(7) .achievement_icon {
+    background-color: var(--color-primary);
+}
+.achievement_card:nth-child(8) .achievement_icon {
+    background-color: var(--color-warning);
+}
+
+.achievement_card:nth-child(9) .achievement_icon {
+    background-color: var(--color-secondary);
+}
+
+.achievement_card:nth-child(11) .achievement_icon {
+    background-color: var(--color-primary);
+}
+.achievement_card:nth-child(12) .achievement_icon {
+    background-color: var(--color-warning);
+}
+
+.achievement_card:nth-child(13) .achievement_icon {
+    background-color: var(--color-secondary);
+}
+
+.achievement_card p {
+    margin-top: 1rem;
+}
+
+/*============= media tablet =============*/
+
+@media screen and (max-width: 1024px) {
+    .about_achievements {
+        margin-top: 2rem;
+
+    }
+    .achievements_cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+
+    .about_achievements-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about_achievements-left {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+}
+
+/*============= media mobile =============*/
+@media screen and (max-width: 600px) {
+    .achievements_cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem 0rem;
+        margin-left: 0.5rem;
+    }
+    .achievement_card {
+        background: var(--color-bg1);
+        padding: 1.6rem;
+        border-radius: 1rem;
+        text-align: center;
+        padding-bottom: 1.9rem;
+        width: 93%;
+    }
+    
+    
+
+    
+}
